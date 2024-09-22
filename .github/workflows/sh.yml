@@ -20,8 +20,8 @@ jobs:
           echo "Labels: $labels"
           if [[ $labels != *"release"* ]]; then
             echo "Release label not found, exiting."
-            exit 1
-          fi
+            exit 1 
+          fi 
 
       - name: Checkout repository
         uses: actions/checkout@v3
